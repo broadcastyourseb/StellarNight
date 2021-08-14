@@ -1,0 +1,607 @@
+EESchema Schematic File Version 4
+LIBS:stellarbox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR04
+U 1 1 5B957BA3
+P 7300 5800
+F 0 "#PWR04" H 7300 5650 50  0001 C CNN
+F 1 "+5V" H 7315 5973 50  0000 C CNN
+F 2 "" H 7300 5800 50  0001 C CNN
+F 3 "" H 7300 5800 50  0001 C CNN
+	1    7300 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B957BEC
+P 7300 4900
+F 0 "#PWR03" H 7300 4650 50  0001 C CNN
+F 1 "GND" H 7305 4727 50  0000 C CNN
+F 2 "" H 7300 4900 50  0001 C CNN
+F 3 "" H 7300 4900 50  0001 C CNN
+	1    7300 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B958B85
+P 1850 2800
+F 0 "R1" V 1643 2800 50  0000 C CNN
+F 1 "10R" V 1734 2800 50  0000 C CNN
+F 2 "" V 1780 2800 50  0001 C CNN
+F 3 "~" H 1850 2800 50  0001 C CNN
+	1    1850 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2800 1550 2800
+NoConn ~ 7300 1500
+NoConn ~ 7300 1600
+NoConn ~ 7300 1700
+NoConn ~ 7300 1800
+NoConn ~ 7300 1900
+NoConn ~ 7300 2000
+NoConn ~ 7300 2100
+NoConn ~ 7300 2200
+NoConn ~ 7300 2300
+NoConn ~ 7300 2400
+NoConn ~ 7300 2500
+NoConn ~ 7300 2600
+NoConn ~ 7300 3300
+NoConn ~ 7300 3400
+NoConn ~ 7300 3500
+NoConn ~ 7300 3600
+NoConn ~ 7300 3700
+NoConn ~ 7300 3800
+NoConn ~ 7300 3900
+NoConn ~ 7300 4000
+NoConn ~ 7300 4100
+NoConn ~ 7300 4200
+NoConn ~ 7300 4300
+NoConn ~ 7300 4400
+NoConn ~ 7300 4600
+NoConn ~ 7300 4700
+NoConn ~ 7300 5700
+NoConn ~ 7300 5600
+NoConn ~ 7300 5500
+NoConn ~ 7300 5400
+NoConn ~ 7300 5300
+NoConn ~ 7300 5200
+NoConn ~ 7300 5100
+NoConn ~ 7300 5000
+NoConn ~ 9900 5800
+NoConn ~ 9900 5700
+NoConn ~ 9900 5600
+NoConn ~ 9900 5500
+NoConn ~ 9900 5400
+NoConn ~ 9900 5300
+NoConn ~ 9900 5200
+NoConn ~ 9900 5100
+NoConn ~ 9900 5000
+NoConn ~ 9900 4900
+NoConn ~ 9900 1500
+NoConn ~ 9900 2600
+NoConn ~ 9900 2500
+NoConn ~ 9900 2400
+NoConn ~ 9900 2300
+NoConn ~ 9900 2200
+NoConn ~ 9900 2100
+NoConn ~ 9900 2000
+NoConn ~ 9900 1900
+NoConn ~ 9900 1800
+NoConn ~ 9900 1700
+NoConn ~ 9900 1600
+NoConn ~ 8350 1050
+NoConn ~ 8450 1050
+NoConn ~ 8550 1050
+NoConn ~ 8650 1050
+NoConn ~ 8750 1050
+NoConn ~ 8850 1050
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5B961C5F
+P 1100 2900
+F 0 "J1" H 1020 2575 50  0000 C CNN
+F 1 "Conn_01x02" H 1020 2666 50  0000 C CNN
+F 2 "" H 1100 2900 50  0001 C CNN
+F 3 "~" H 1100 2900 50  0001 C CNN
+	1    1100 2900
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 2850 2650 1500 800 
+U 5B96204F
+F0 "Current_Sensor" 50
+F1 "Current_Sensor.sch" 50
+F2 "CURRENT_MEASURE" I R 4350 2800 50 
+F3 "MAIN_12VIN" I L 2850 2800 50 
+F4 "MAIN_12VOUT" I L 2850 2900 50 
+F5 "GROUND" I L 2850 3200 50 
+F6 "MAIN_5V" I L 2850 3300 50 
+$EndSheet
+Wire Wire Line
+	2000 2800 2400 2800
+$Comp
+L power:GND #PWR01
+U 1 1 5B96364D
+P 2600 3200
+F 0 "#PWR01" H 2600 2950 50  0001 C CNN
+F 1 "GND" V 2500 3100 50  0000 C CNN
+F 2 "" H 2600 3200 50  0001 C CNN
+F 3 "" H 2600 3200 50  0001 C CNN
+	1    2600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5B96365E
+P 2600 3300
+F 0 "#PWR02" H 2600 3150 50  0001 C CNN
+F 1 "+5V" V 2500 3400 50  0000 C CNN
+F 2 "" H 2600 3300 50  0001 C CNN
+F 3 "" H 2600 3300 50  0001 C CNN
+	1    2600 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 3200 2850 3200
+Wire Wire Line
+	2600 3300 2850 3300
+Wire Wire Line
+	1300 2900 1550 2900
+Text GLabel 7300 2800 0    50   Input ~ 0
+A0
+Text GLabel 4500 2800 2    50   Input ~ 0
+A0
+Wire Wire Line
+	4350 2800 4500 2800
+$Comp
+L power:GND #PWR0101
+U 1 1 5B963FB4
+P 1250 900
+F 0 "#PWR0101" H 1250 650 50  0001 C CNN
+F 1 "GND" H 1255 727 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5B96419A
+P 1250 1350
+F 0 "#PWR0102" H 1250 1200 50  0001 C CNN
+F 1 "+5V" V 1150 1450 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 5B964262
+P 1250 1800
+F 0 "#PWR0103" H 1250 1650 50  0001 C CNN
+F 1 "+12V" V 1265 1928 50  0000 L CNN
+F 2 "" H 1250 1800 50  0001 C CNN
+F 3 "" H 1250 1800 50  0001 C CNN
+	1    1250 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5B9642A0
+P 950 900
+F 0 "#FLG0101" H 950 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1074 50  0000 C CNN
+F 2 "" H 950 900 50  0001 C CNN
+F 3 "~" H 950 900 50  0001 C CNN
+	1    950  900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5B9642BE
+P 950 1350
+F 0 "#FLG0102" H 950 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1524 50  0000 C CNN
+F 2 "" H 950 1350 50  0001 C CNN
+F 3 "~" H 950 1350 50  0001 C CNN
+	1    950  1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5B9642CF
+P 950 1800
+F 0 "#FLG0103" H 950 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1974 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "~" H 950 1800 50  0001 C CNN
+	1    950  1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  900  1250 900 
+Wire Wire Line
+	950  1350 1250 1350
+Wire Wire Line
+	950  1800 1250 1800
+$Comp
+L power:+12V #PWR0104
+U 1 1 5B964AD6
+P 1550 2700
+F 0 "#PWR0104" H 1550 2550 50  0001 C CNN
+F 1 "+12V" H 1565 2873 50  0000 C CNN
+F 2 "" H 1550 2700 50  0001 C CNN
+F 3 "" H 1550 2700 50  0001 C CNN
+	1    1550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2700 1550 2800
+Connection ~ 1550 2800
+Wire Wire Line
+	1550 2800 1700 2800
+$Comp
+L power:GND #PWR0106
+U 1 1 5B964F31
+P 1550 3050
+F 0 "#PWR0106" H 1550 2800 50  0001 C CNN
+F 1 "GND" H 1555 2877 50  0000 C CNN
+F 2 "" H 1550 3050 50  0001 C CNN
+F 3 "" H 1550 3050 50  0001 C CNN
+	1    1550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2900 1550 3050
+Connection ~ 1550 2900
+Wire Wire Line
+	1550 2900 2850 2900
+$Sheet
+S 2850 4000 1700 1350
+U 5B9673C5
+F0 "Power_Relay" 50
+F1 "Power_Relay.sch" 50
+F2 "CH1_COMMAND" I L 2850 4450 50 
+F3 "5V_MICROCONTROLLER" I L 2850 4150 50 
+F4 "12V" I R 4550 4150 50 
+F5 "CH1_CONTROL" I R 4550 4450 50 
+F6 "CH2_COMMAND" I L 2850 4550 50 
+F7 "CH2_CONTROL" I R 4550 4550 50 
+F8 "CH3_COMMAND" I L 2850 4650 50 
+F9 "CH3_CONTROL" I R 4550 4650 50 
+F10 "CH4_COMMAND" I L 2850 4750 50 
+F11 "CH4_CONTROL" I R 4550 4750 50 
+F12 "CH1_CHECK" I R 4550 4950 50 
+F13 "CH2_CHECK" I R 4550 5050 50 
+F14 "CH3_CHECK" I R 4550 5150 50 
+F15 "CH4_CHECK" I R 4550 5250 50 
+$EndSheet
+Text GLabel 9900 2700 2    50   Input ~ 0
+D22
+Text GLabel 2550 4450 0    50   Input ~ 0
+D22
+Wire Wire Line
+	2550 4450 2850 4450
+$Comp
+L power:+5V #PWR05
+U 1 1 5B99773F
+P 2500 4150
+F 0 "#PWR05" H 2500 4000 50  0001 C CNN
+F 1 "+5V" V 2600 4250 50  0000 C CNN
+F 2 "" H 2500 4150 50  0001 C CNN
+F 3 "" H 2500 4150 50  0001 C CNN
+	1    2500 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 4150 2850 4150
+$Comp
+L power:+12V #PWR06
+U 1 1 5B997901
+P 5550 4150
+F 0 "#PWR06" H 5550 4000 50  0001 C CNN
+F 1 "+12V" V 5565 4278 50  0000 L CNN
+F 2 "" H 5550 4150 50  0001 C CNN
+F 3 "" H 5550 4150 50  0001 C CNN
+	1    5550 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 9900 2800 2    50   Input ~ 0
+D23
+Text GLabel 9900 2900 2    50   Input ~ 0
+D24
+Text GLabel 9900 3000 2    50   Input ~ 0
+D25
+Text GLabel 2550 4550 0    50   Input ~ 0
+D23
+Text GLabel 2550 4650 0    50   Input ~ 0
+D24
+Text GLabel 2550 4750 0    50   Input ~ 0
+D25
+Wire Wire Line
+	2550 4550 2850 4550
+Wire Wire Line
+	2550 4650 2850 4650
+Wire Wire Line
+	2550 4750 2850 4750
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5B99C04E
+P 5100 4550
+F 0 "J2" H 5150 4750 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 5150 4250 50  0000 C CNN
+F 2 "" H 5100 4550 50  0001 C CNN
+F 3 "~" H 5100 4550 50  0001 C CNN
+	1    5100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4150 5500 4150
+Wire Wire Line
+	4550 4450 4900 4450
+Wire Wire Line
+	4550 4650 4900 4650
+Wire Wire Line
+	4550 4750 4900 4750
+Wire Wire Line
+	4550 4550 4900 4550
+Wire Wire Line
+	5500 4150 5500 4450
+Wire Wire Line
+	5500 4750 5400 4750
+Connection ~ 5500 4150
+Wire Wire Line
+	5500 4150 5550 4150
+Wire Wire Line
+	5400 4450 5500 4450
+Connection ~ 5500 4450
+Wire Wire Line
+	5500 4450 5500 4550
+Wire Wire Line
+	5400 4550 5500 4550
+Connection ~ 5500 4550
+Wire Wire Line
+	5500 4550 5500 4650
+Wire Wire Line
+	5400 4650 5500 4650
+Connection ~ 5500 4650
+Wire Wire Line
+	5500 4650 5500 4750
+Text GLabel 9900 3100 2    50   Input ~ 0
+D26
+Text GLabel 9900 3200 2    50   Input ~ 0
+D27
+Text GLabel 9900 3300 2    50   Input ~ 0
+D28
+Text GLabel 9900 3400 2    50   Input ~ 0
+D29
+Text GLabel 5050 4950 2    50   Input ~ 0
+D26
+Text GLabel 5050 5050 2    50   Input ~ 0
+D27
+Text GLabel 5050 5150 2    50   Input ~ 0
+D28
+Text GLabel 5050 5250 2    50   Input ~ 0
+D29
+Wire Wire Line
+	4550 5050 5050 5050
+Wire Wire Line
+	4550 5150 5050 5150
+Wire Wire Line
+	4550 5250 5050 5250
+Wire Wire Line
+	4550 4950 5050 4950
+$Sheet
+S 2850 2000 1450 350 
+U 5B9E19C1
+F0 "Voltage_Sensor" 50
+F1 "Voltage_Sensor.sch" 50
+F2 "INPUT_VOLTAGE" I L 2850 2150 50 
+F3 "VOLTAGE_MEASURE" I R 4300 2150 50 
+$EndSheet
+Wire Wire Line
+	2400 2800 2400 2150
+Wire Wire Line
+	2400 2150 2850 2150
+Connection ~ 2400 2800
+Wire Wire Line
+	2400 2800 2850 2800
+Text GLabel 7300 2900 0    50   Input ~ 0
+A1
+Text GLabel 4500 2150 2    50   Input ~ 0
+A1
+Wire Wire Line
+	4300 2150 4500 2150
+$Sheet
+S 2850 5800 1700 1650
+U 5B9E320D
+F0 "Hub_USB_Switch" 50
+F1 "Hub_USB_Switch.sch" 50
+F2 "GROUND" I L 2850 6050 50 
+F3 "MAIN_5V" I L 2850 5900 50 
+F4 "USB1_CONTROL" I R 4550 5900 50 
+F5 "USB2_CONTROL" I R 4550 6000 50 
+F6 "USB3_CONTROL" I R 4550 6100 50 
+F7 "USB4_CONTROL" I R 4550 6200 50 
+F8 "USB5_CONTROL" I R 4550 6300 50 
+F9 "USB6_CONTROL" I R 4550 6400 50 
+F10 "USB7_CONTROL" I R 4550 6500 50 
+F11 "USB1_CHECK" I R 4550 6750 50 
+F12 "USB2_CHECK" I R 4550 6850 50 
+F13 "USB3_CHECK" I R 4550 6950 50 
+F14 "USB4_CHECK" I R 4550 7050 50 
+F15 "USB5_CHECK" I R 4550 7150 50 
+F16 "USB6_CHECK" I R 4550 7250 50 
+F17 "USB7_CHECK" I R 4550 7350 50 
+$EndSheet
+$Comp
+L power:+5V #PWR0121
+U 1 1 5B9BC38D
+P 2550 5900
+F 0 "#PWR0121" H 2550 5750 50  0001 C CNN
+F 1 "+5V" V 2650 6000 50  0000 C CNN
+F 2 "" H 2550 5900 50  0001 C CNN
+F 3 "" H 2550 5900 50  0001 C CNN
+	1    2550 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5B9BC3A0
+P 2550 6050
+F 0 "#PWR0122" H 2550 5800 50  0001 C CNN
+F 1 "GND" V 2650 5950 50  0000 C CNN
+F 2 "" H 2550 6050 50  0001 C CNN
+F 3 "" H 2550 6050 50  0001 C CNN
+	1    2550 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 5900 2850 5900
+Wire Wire Line
+	2550 6050 2850 6050
+Text GLabel 9900 3500 2    50   Input ~ 0
+D30
+Text GLabel 9900 3600 2    50   Input ~ 0
+D31
+Text GLabel 9900 3700 2    50   Input ~ 0
+D32
+Text GLabel 9900 3800 2    50   Input ~ 0
+D33
+Text GLabel 9900 3900 2    50   Input ~ 0
+D34
+Text GLabel 9900 4000 2    50   Input ~ 0
+D35
+Text GLabel 9900 4100 2    50   Input ~ 0
+D36
+Text GLabel 5050 5900 2    50   Input ~ 0
+D30
+Text GLabel 5050 6000 2    50   Input ~ 0
+D31
+Text GLabel 5050 6100 2    50   Input ~ 0
+D32
+Text GLabel 5050 6200 2    50   Input ~ 0
+D33
+Text GLabel 5050 6300 2    50   Input ~ 0
+D34
+Text GLabel 5050 6400 2    50   Input ~ 0
+D35
+Text GLabel 5050 6500 2    50   Input ~ 0
+D36
+Wire Wire Line
+	4550 5900 5050 5900
+Wire Wire Line
+	4550 6000 5050 6000
+Wire Wire Line
+	4550 6100 5050 6100
+Wire Wire Line
+	4550 6200 5050 6200
+Wire Wire Line
+	4550 6300 5050 6300
+Wire Wire Line
+	4550 6400 5050 6400
+Wire Wire Line
+	4550 6500 5050 6500
+Text Notes 2950 7800 0    50   ~ 0
+Ajouter retour USB_CHECK
+Text GLabel 9900 4200 2    50   Input ~ 0
+D37
+Text GLabel 9900 4300 2    50   Input ~ 0
+D38
+Text GLabel 9900 4400 2    50   Input ~ 0
+D39
+Text GLabel 9900 4500 2    50   Input ~ 0
+D40
+Text GLabel 9900 4600 2    50   Input ~ 0
+D41
+Text GLabel 9900 4700 2    50   Input ~ 0
+D42
+Text GLabel 9900 4800 2    50   Input ~ 0
+D43
+Text GLabel 5050 6750 2    50   Input ~ 0
+D37
+Text GLabel 5050 6850 2    50   Input ~ 0
+D38
+Text GLabel 5050 6950 2    50   Input ~ 0
+D39
+Text GLabel 5050 7050 2    50   Input ~ 0
+D40
+Text GLabel 5050 7150 2    50   Input ~ 0
+D41
+Text GLabel 5050 7250 2    50   Input ~ 0
+D42
+Text GLabel 5050 7350 2    50   Input ~ 0
+D43
+Wire Wire Line
+	4550 6750 5050 6750
+Wire Wire Line
+	4550 6850 5050 6850
+Wire Wire Line
+	4550 6950 5050 6950
+Wire Wire Line
+	4550 7050 5050 7050
+Wire Wire Line
+	4550 7150 5050 7150
+Wire Wire Line
+	4550 7250 5050 7250
+Wire Wire Line
+	4550 7350 5050 7350
+Text Notes 2950 7950 0    50   ~ 0
+Régler problème double 5v
+$Sheet
+S 2850 750  1450 950 
+U 5B9E37AD
+F0 "Alarm" 50
+F1 "Alarm.sch" 50
+F2 "Y_OUT" I R 4300 900 50 
+F3 "X_OUT" I R 4300 1000 50 
+F4 "Z_OUT" I R 4300 1100 50 
+$EndSheet
+$Comp
+L arduino:Arduino_Mega2560_Shield U1
+U 1 1 5B9579B5
+P 8600 3650
+F 0 "U1" H 8600 1270 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" H 8600 1164 60  0000 C CNN
+F 2 "" H 9300 6400 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 9300 6400 60  0001 C CNN
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 3000 0    50   Input ~ 0
+A2
+NoConn ~ 7300 3100
+NoConn ~ 7300 3200
+Text GLabel 4450 1000 2    50   Input ~ 0
+A2
+Wire Wire Line
+	4300 900  4450 900 
+Wire Wire Line
+	4300 1000 4450 1000
+Wire Wire Line
+	4450 1000 4450 900 
+Wire Wire Line
+	4300 1100 4450 1100
+Wire Wire Line
+	4450 1100 4450 1000
+Connection ~ 4450 1000
+Text Notes 2950 8100 0    50   ~ 0
+Ajouter régul + mesure tempéarture\n
+$EndSCHEMATC

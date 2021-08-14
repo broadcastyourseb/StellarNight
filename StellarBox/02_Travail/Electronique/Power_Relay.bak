@@ -1,0 +1,765 @@
+EESchema Schematic File Version 4
+LIBS:stellarbox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1600 2400 0    50   Input ~ 0
+CH1_COMMAND
+$Comp
+L Device:R R3
+U 1 1 5B977024
+P 3650 2400
+F 0 "R3" V 3550 2400 50  0000 C CNN
+F 1 "220R" V 3750 2400 50  0000 C CNN
+F 2 "" V 3580 2400 50  0001 C CNN
+F 3 "~" H 3650 2400 50  0001 C CNN
+	1    3650 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5B97714E
+P 4100 2600
+F 0 "#PWR0105" H 4100 2350 50  0001 C CNN
+F 1 "GND" H 4105 2427 50  0000 C CNN
+F 2 "" H 4100 2600 50  0001 C CNN
+F 3 "" H 4100 2600 50  0001 C CNN
+	1    4100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2400 3500 2400
+$Comp
+L Device:R R2
+U 1 1 5B977498
+P 2250 1950
+F 0 "R2" H 2320 1996 50  0000 L CNN
+F 1 "220R" H 2320 1905 50  0000 L CNN
+F 2 "" V 2180 1950 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2100 2250 2200
+Wire Wire Line
+	2250 2200 2600 2200
+Wire Wire Line
+	2300 2400 2600 2400
+Text HLabel 1600 1800 0    50   Input ~ 0
+5V_MICROCONTROLLER
+Wire Wire Line
+	1600 1800 2250 1800
+Text HLabel 3150 1600 0    50   Input ~ 0
+12V
+$Comp
+L Diode:1N4148 D1
+U 1 1 5B982BB7
+P 2150 2400
+F 0 "D1" H 2150 2616 50  0000 C CNN
+F 1 "1N4148" H 2150 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2150 2225 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2400 2000 2400
+$Comp
+L Transistor_FET:IRLZ44N Q1
+U 1 1 5B995FF1
+P 4000 2400
+F 0 "Q1" H 4205 2446 50  0000 L CNN
+F 1 "IRLZ44N" H 4205 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4250 2325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4000 2400 50  0001 L CNN
+	1    4000 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4750 2200 2    50   Input ~ 0
+CH1_CONTROL
+Wire Wire Line
+	4100 2200 4750 2200
+$Comp
+L Device:R R5
+U 1 1 5B9A40DC
+P 3500 1600
+F 0 "R5" V 3293 1600 50  0000 C CNN
+F 1 "4.7kR" V 3384 1600 50  0000 C CNN
+F 2 "" V 3430 1600 50  0001 C CNN
+F 3 "~" H 3500 1600 50  0001 C CNN
+	1    3500 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5B9A5302
+P 3850 1900
+F 0 "#PWR07" H 3850 1650 50  0001 C CNN
+F 1 "GND" H 3855 1727 50  0000 C CNN
+F 2 "" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5B9A53B2
+P 4600 1450
+F 0 "R8" H 4530 1404 50  0000 R CNN
+F 1 "4.7kR" H 4530 1495 50  0000 R CNN
+F 2 "" V 4530 1450 50  0001 C CNN
+F 3 "~" H 4600 1450 50  0001 C CNN
+	1    4600 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1800 2250 1250
+Wire Wire Line
+	2250 1250 4600 1250
+Connection ~ 2250 1800
+$Comp
+L power:GND #PWR010
+U 1 1 5B9A688D
+P 4450 1800
+F 0 "#PWR010" H 4450 1550 50  0001 C CNN
+F 1 "GND" V 4455 1672 50  0000 R CNN
+F 2 "" H 4450 1800 50  0001 C CNN
+F 3 "" H 4450 1800 50  0001 C CNN
+	1    4450 1800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4950 1600 2    50   Input ~ 0
+CH1_CHECK
+$Comp
+L Diode:1N4148 D3
+U 1 1 5B9A801F
+P 3650 1750
+F 0 "D3" V 3604 1829 50  0000 L CNN
+F 1 "1N4148" V 3750 1450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3650 1575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3650 1750 50  0001 C CNN
+	1    3650 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2200 3200 1600
+Wire Wire Line
+	3650 1600 3850 1600
+Connection ~ 3650 1600
+Wire Wire Line
+	3850 1800 3850 1900
+Wire Wire Line
+	3850 1900 3650 1900
+Wire Wire Line
+	3150 1600 3200 1600
+Wire Wire Line
+	3350 1600 3300 1600
+Wire Wire Line
+	4100 2200 3300 2200
+Wire Wire Line
+	3300 1600 3300 2200
+Connection ~ 4100 2200
+Connection ~ 3850 1900
+Text HLabel 6700 2400 0    50   Input ~ 0
+CH2_COMMAND
+$Comp
+L Device:R R14
+U 1 1 5B9B03D0
+P 8750 2400
+F 0 "R14" V 8650 2400 50  0000 C CNN
+F 1 "220R" V 8850 2400 50  0000 C CNN
+F 2 "" V 8680 2400 50  0001 C CNN
+F 3 "~" H 8750 2400 50  0001 C CNN
+	1    8750 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5B9B03D7
+P 9200 2600
+F 0 "#PWR014" H 9200 2350 50  0001 C CNN
+F 1 "GND" H 9205 2427 50  0000 C CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2400 8600 2400
+$Comp
+L Device:R R10
+U 1 1 5B9B03DE
+P 7350 1950
+F 0 "R10" H 7420 1996 50  0000 L CNN
+F 1 "220R" H 7420 1905 50  0000 L CNN
+F 2 "" V 7280 1950 50  0001 C CNN
+F 3 "~" H 7350 1950 50  0001 C CNN
+	1    7350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2100 7350 2200
+Wire Wire Line
+	7350 2200 7700 2200
+Wire Wire Line
+	7400 2400 7700 2400
+Text HLabel 6700 1800 0    50   Input ~ 0
+5V_MICROCONTROLLER
+Wire Wire Line
+	6700 1800 7350 1800
+Text HLabel 8250 1600 0    50   Input ~ 0
+12V
+$Comp
+L Diode:1N4148 D5
+U 1 1 5B9B03EB
+P 7250 2400
+F 0 "D5" H 7250 2616 50  0000 C CNN
+F 1 "1N4148" H 7250 2525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7250 2225 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7250 2400 50  0001 C CNN
+	1    7250 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2400 7100 2400
+$Comp
+L Transistor_FET:IRLZ44N Q3
+U 1 1 5B9B03F3
+P 9100 2400
+F 0 "Q3" H 9305 2446 50  0000 L CNN
+F 1 "IRLZ44N" H 9305 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9350 2325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 9100 2400 50  0001 L CNN
+	1    9100 2400
+	1    0    0    -1  
+$EndComp
+Text HLabel 9850 2200 2    50   Input ~ 0
+CH2_CONTROL
+Wire Wire Line
+	9200 2200 9850 2200
+$Comp
+L Isolator:ILQ74 U3
+U 4 1 5B9B0403
+P 9250 1700
+F 0 "U3" H 9250 2025 50  0000 C CNN
+F 1 "ILQ74" H 9250 1934 50  0000 C CNN
+F 2 "" H 9050 1500 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 9250 1700 50  0001 L CNN
+	4    9250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5B9B040A
+P 8600 1600
+F 0 "R12" V 8393 1600 50  0000 C CNN
+F 1 "4.7kR" V 8484 1600 50  0000 C CNN
+F 2 "" V 8530 1600 50  0001 C CNN
+F 3 "~" H 8600 1600 50  0001 C CNN
+	1    8600 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5B9B0411
+P 8950 1900
+F 0 "#PWR012" H 8950 1650 50  0001 C CNN
+F 1 "GND" H 8955 1727 50  0000 C CNN
+F 2 "" H 8950 1900 50  0001 C CNN
+F 3 "" H 8950 1900 50  0001 C CNN
+	1    8950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5B9B0417
+P 9700 1450
+F 0 "R16" H 9630 1404 50  0000 R CNN
+F 1 "4.7kR" H 9630 1495 50  0000 R CNN
+F 2 "" V 9630 1450 50  0001 C CNN
+F 3 "~" H 9700 1450 50  0001 C CNN
+	1    9700 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 1800 7350 1250
+Wire Wire Line
+	7350 1250 9700 1250
+Connection ~ 7350 1800
+$Comp
+L power:GND #PWR016
+U 1 1 5B9B0422
+P 9550 1800
+F 0 "#PWR016" H 9550 1550 50  0001 C CNN
+F 1 "GND" V 9555 1672 50  0000 R CNN
+F 2 "" H 9550 1800 50  0001 C CNN
+F 3 "" H 9550 1800 50  0001 C CNN
+	1    9550 1800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10050 1600 2    50   Input ~ 0
+CH2_CHECK
+$Comp
+L Diode:1N4148 D7
+U 1 1 5B9B042B
+P 8750 1750
+F 0 "D7" V 8704 1829 50  0000 L CNN
+F 1 "1N4148" V 8850 1450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8750 1575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 8750 1750 50  0001 C CNN
+	1    8750 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 2200 8300 1600
+Wire Wire Line
+	8750 1600 8950 1600
+Connection ~ 8750 1600
+Wire Wire Line
+	8950 1800 8950 1900
+Wire Wire Line
+	8950 1900 8750 1900
+Wire Wire Line
+	8250 1600 8300 1600
+Wire Wire Line
+	8450 1600 8400 1600
+Wire Wire Line
+	9200 2200 8400 2200
+Wire Wire Line
+	8400 1600 8400 2200
+Connection ~ 9200 2200
+Connection ~ 8950 1900
+Text HLabel 1650 5400 0    50   Input ~ 0
+CH3_COMMAND
+$Comp
+L Device:R R7
+U 1 1 5B9B2093
+P 3700 5400
+F 0 "R7" V 3600 5400 50  0000 C CNN
+F 1 "220R" V 3800 5400 50  0000 C CNN
+F 2 "" V 3630 5400 50  0001 C CNN
+F 3 "~" H 3700 5400 50  0001 C CNN
+	1    3700 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5B9B209A
+P 4150 5600
+F 0 "#PWR09" H 4150 5350 50  0001 C CNN
+F 1 "GND" H 4155 5427 50  0000 C CNN
+F 2 "" H 4150 5600 50  0001 C CNN
+F 3 "" H 4150 5600 50  0001 C CNN
+	1    4150 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5400 3550 5400
+$Comp
+L Device:R R4
+U 1 1 5B9B20A1
+P 2300 4950
+F 0 "R4" H 2370 4996 50  0000 L CNN
+F 1 "220R" H 2370 4905 50  0000 L CNN
+F 2 "" V 2230 4950 50  0001 C CNN
+F 3 "~" H 2300 4950 50  0001 C CNN
+	1    2300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5100 2300 5200
+Wire Wire Line
+	2300 5200 2650 5200
+Wire Wire Line
+	2350 5400 2650 5400
+Text HLabel 1650 4800 0    50   Input ~ 0
+5V_MICROCONTROLLER
+Wire Wire Line
+	1650 4800 2300 4800
+Text HLabel 3200 4600 0    50   Input ~ 0
+12V
+$Comp
+L Diode:1N4148 D2
+U 1 1 5B9B20AE
+P 2200 5400
+F 0 "D2" H 2200 5616 50  0000 C CNN
+F 1 "1N4148" H 2200 5525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2200 5225 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 2200 5400 50  0001 C CNN
+	1    2200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5400 2050 5400
+$Comp
+L Transistor_FET:IRLZ44N Q2
+U 1 1 5B9B20B6
+P 4050 5400
+F 0 "Q2" H 4255 5446 50  0000 L CNN
+F 1 "IRLZ44N" H 4255 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4300 5325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4050 5400 50  0001 L CNN
+	1    4050 5400
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 5200 2    50   Input ~ 0
+CH3_CONTROL
+Wire Wire Line
+	4150 5200 4800 5200
+$Comp
+L Device:R R6
+U 1 1 5B9B20CD
+P 3550 4600
+F 0 "R6" V 3343 4600 50  0000 C CNN
+F 1 "4.7kR" V 3434 4600 50  0000 C CNN
+F 2 "" V 3480 4600 50  0001 C CNN
+F 3 "~" H 3550 4600 50  0001 C CNN
+	1    3550 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5B9B20D4
+P 3900 4900
+F 0 "#PWR08" H 3900 4650 50  0001 C CNN
+F 1 "GND" H 3905 4727 50  0000 C CNN
+F 2 "" H 3900 4900 50  0001 C CNN
+F 3 "" H 3900 4900 50  0001 C CNN
+	1    3900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5B9B20DA
+P 4650 4450
+F 0 "R9" H 4580 4404 50  0000 R CNN
+F 1 "4.7kR" H 4580 4495 50  0000 R CNN
+F 2 "" V 4580 4450 50  0001 C CNN
+F 3 "~" H 4650 4450 50  0001 C CNN
+	1    4650 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 4800 2300 4250
+Wire Wire Line
+	2300 4250 4650 4250
+Connection ~ 2300 4800
+$Comp
+L power:GND #PWR011
+U 1 1 5B9B20E5
+P 4500 4800
+F 0 "#PWR011" H 4500 4550 50  0001 C CNN
+F 1 "GND" V 4505 4672 50  0000 R CNN
+F 2 "" H 4500 4800 50  0001 C CNN
+F 3 "" H 4500 4800 50  0001 C CNN
+	1    4500 4800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 5000 4600 2    50   Input ~ 0
+CH3_CHECK
+$Comp
+L Diode:1N4148 D4
+U 1 1 5B9B20EE
+P 3700 4750
+F 0 "D4" V 3654 4829 50  0000 L CNN
+F 1 "1N4148" V 3800 4450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3700 4575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3700 4750 50  0001 C CNN
+	1    3700 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5200 3250 4600
+Wire Wire Line
+	3700 4600 3900 4600
+Connection ~ 3700 4600
+Wire Wire Line
+	3900 4800 3900 4900
+Wire Wire Line
+	3900 4900 3700 4900
+Wire Wire Line
+	3200 4600 3250 4600
+Wire Wire Line
+	3400 4600 3350 4600
+Wire Wire Line
+	4150 5200 3350 5200
+Wire Wire Line
+	3350 4600 3350 5200
+Connection ~ 4150 5200
+Connection ~ 3900 4900
+Text HLabel 6750 5400 0    50   Input ~ 0
+CH4_COMMAND
+$Comp
+L Device:R R15
+U 1 1 5B9B2101
+P 8800 5400
+F 0 "R15" V 8700 5400 50  0000 C CNN
+F 1 "220R" V 8900 5400 50  0000 C CNN
+F 2 "" V 8730 5400 50  0001 C CNN
+F 3 "~" H 8800 5400 50  0001 C CNN
+	1    8800 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5B9B2108
+P 9250 5600
+F 0 "#PWR015" H 9250 5350 50  0001 C CNN
+F 1 "GND" H 9255 5427 50  0000 C CNN
+F 2 "" H 9250 5600 50  0001 C CNN
+F 3 "" H 9250 5600 50  0001 C CNN
+	1    9250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5400 8650 5400
+$Comp
+L Device:R R11
+U 1 1 5B9B210F
+P 7400 4950
+F 0 "R11" H 7470 4996 50  0000 L CNN
+F 1 "220R" H 7470 4905 50  0000 L CNN
+F 2 "" V 7330 4950 50  0001 C CNN
+F 3 "~" H 7400 4950 50  0001 C CNN
+	1    7400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5100 7400 5200
+Wire Wire Line
+	7400 5200 7750 5200
+Wire Wire Line
+	7450 5400 7750 5400
+Text HLabel 6750 4800 0    50   Input ~ 0
+5V_MICROCONTROLLER
+Wire Wire Line
+	6750 4800 7400 4800
+Text HLabel 8300 4600 0    50   Input ~ 0
+12V
+$Comp
+L Diode:1N4148 D6
+U 1 1 5B9B211C
+P 7300 5400
+F 0 "D6" H 7300 5616 50  0000 C CNN
+F 1 "1N4148" H 7300 5525 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7300 5225 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7300 5400 50  0001 C CNN
+	1    7300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5400 7150 5400
+$Comp
+L Transistor_FET:IRLZ44N Q4
+U 1 1 5B9B2124
+P 9150 5400
+F 0 "Q4" H 9355 5446 50  0000 L CNN
+F 1 "IRLZ44N" H 9355 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9400 5325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 9150 5400 50  0001 L CNN
+	1    9150 5400
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 5200 2    50   Input ~ 0
+CH4_CONTROL
+Wire Wire Line
+	9250 5200 9900 5200
+$Comp
+L Device:R R13
+U 1 1 5B9B213B
+P 8650 4600
+F 0 "R13" V 8443 4600 50  0000 C CNN
+F 1 "4.7kR" V 8534 4600 50  0000 C CNN
+F 2 "" V 8580 4600 50  0001 C CNN
+F 3 "~" H 8650 4600 50  0001 C CNN
+	1    8650 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5B9B2142
+P 9000 4900
+F 0 "#PWR013" H 9000 4650 50  0001 C CNN
+F 1 "GND" H 9005 4727 50  0000 C CNN
+F 2 "" H 9000 4900 50  0001 C CNN
+F 3 "" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5B9B2148
+P 9750 4450
+F 0 "R17" H 9680 4404 50  0000 R CNN
+F 1 "4.7kR" H 9680 4495 50  0000 R CNN
+F 2 "" V 9680 4450 50  0001 C CNN
+F 3 "~" H 9750 4450 50  0001 C CNN
+	1    9750 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 4800 7400 4250
+Wire Wire Line
+	7400 4250 9750 4250
+Connection ~ 7400 4800
+$Comp
+L power:GND #PWR017
+U 1 1 5B9B2153
+P 9600 4800
+F 0 "#PWR017" H 9600 4550 50  0001 C CNN
+F 1 "GND" V 9605 4672 50  0000 R CNN
+F 2 "" H 9600 4800 50  0001 C CNN
+F 3 "" H 9600 4800 50  0001 C CNN
+	1    9600 4800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10100 4600 2    50   Input ~ 0
+CH4_CHECK
+$Comp
+L Diode:1N4148 D8
+U 1 1 5B9B215C
+P 8800 4750
+F 0 "D8" V 8754 4829 50  0000 L CNN
+F 1 "1N4148" V 8900 4450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8800 4575 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 8800 4750 50  0001 C CNN
+	1    8800 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 5200 8350 4600
+Wire Wire Line
+	8800 4600 9000 4600
+Connection ~ 8800 4600
+Wire Wire Line
+	9000 4800 9000 4900
+Wire Wire Line
+	9000 4900 8800 4900
+Wire Wire Line
+	8300 4600 8350 4600
+Wire Wire Line
+	8500 4600 8450 4600
+Wire Wire Line
+	9250 5200 8450 5200
+Wire Wire Line
+	8450 4600 8450 5200
+Connection ~ 9250 5200
+Connection ~ 9000 4900
+$Comp
+L Isolator:ILQ74 U4
+U 4 1 5B9B2134
+P 9300 4700
+F 0 "U4" H 9300 5025 50  0000 C CNN
+F 1 "ILQ74" H 9300 4934 50  0000 C CNN
+F 2 "" H 9100 4500 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 9300 4700 50  0001 L CNN
+	4    9300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U3
+U 3 1 5B9B03FC
+P 8000 2300
+F 0 "U3" H 8000 2625 50  0000 C CNN
+F 1 "ILQ74" H 8000 2534 50  0000 C CNN
+F 2 "" H 7800 2100 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 8000 2300 50  0001 L CNN
+	3    8000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U4
+U 3 1 5B9BB3FC
+P 8050 5300
+F 0 "U4" H 8050 5625 50  0000 C CNN
+F 1 "ILQ74" H 8050 5534 50  0000 C CNN
+F 2 "" H 7850 5100 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 8050 5300 50  0001 L CNN
+	3    8050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U4
+U 1 1 5B9BAEF8
+P 2950 5300
+F 0 "U4" H 2950 5625 50  0000 C CNN
+F 1 "ILQ74" H 2950 5534 50  0000 C CNN
+F 2 "" H 2750 5100 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2950 5300 50  0001 L CNN
+	1    2950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U4
+U 2 1 5B9BAFCC
+P 4200 4700
+F 0 "U4" H 4200 5025 50  0000 C CNN
+F 1 "ILQ74" H 4200 4934 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 4200 4700 50  0001 L CNN
+	2    4200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U3
+U 1 1 5B9A27C6
+P 2900 2300
+F 0 "U3" H 2900 2625 50  0000 C CNN
+F 1 "ILQ74" H 2900 2534 50  0000 C CNN
+F 2 "" H 2700 2100 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 2900 2300 50  0001 L CNN
+	1    2900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:ILQ74 U3
+U 2 1 5B9A2851
+P 4150 1700
+F 0 "U3" H 4150 2025 50  0000 C CNN
+F 1 "ILQ74" H 4150 1934 50  0000 C CNN
+F 2 "" H 3950 1500 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83640/ild74.pdf" H 4150 1700 50  0001 L CNN
+	2    4150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1300 4600 1250
+Wire Wire Line
+	4450 1600 4600 1600
+Connection ~ 4600 1600
+Wire Wire Line
+	4600 1600 4950 1600
+Wire Wire Line
+	9550 1600 9700 1600
+Connection ~ 9700 1600
+Wire Wire Line
+	9700 1600 10050 1600
+Wire Wire Line
+	9700 1250 9700 1300
+Wire Wire Line
+	9750 4250 9750 4300
+Connection ~ 9750 4600
+Wire Wire Line
+	9750 4600 10100 4600
+Wire Wire Line
+	9600 4600 9750 4600
+Wire Wire Line
+	4500 4600 4650 4600
+Connection ~ 4650 4600
+Wire Wire Line
+	4650 4300 4650 4250
+Wire Wire Line
+	4650 4600 5000 4600
+$EndSCHEMATC
